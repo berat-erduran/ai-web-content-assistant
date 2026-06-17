@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Web İçerik Asistanı</title>
+    <meta name="description" content="Küçük işletmeler için yapay zekâ destekli web sitesi içerik üretici demo projesi.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="websitesi.css">
+</head>
+<body>
+    <div class="ambient-particles" id="snowflakes" aria-hidden="true"></div>
+
+    <header class="site-header">
+        <div class="header-shell">
+            <a href="#hero" class="logo">
+                <span class="logo-mark">AI</span>
+                <span class="logo-text">
+                    <strong>AI Web İçerik Asistanı</strong>
+                    <small>Yapay Zekâ Destekli İçerik Üretimi</small>
+                </span>
+            </a>
+
+            <nav class="main-nav" aria-label="Ana navigasyon">
+                <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navLinks">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="#hero">Anasayfa</a></li>
+                    <li><a href="#about">Proje Hakkında</a></li>
+                    <li><a href="#how-it-works">Nasıl Çalışır?</a></li>
+                    <li><a href="#generator">AI İçerik Üretici</a></li>
+                    <li><a href="#features">Özellikler</a></li>
+                    <li><a href="#scenario">Kullanım Senaryosu</a></li>
+                    <li><a href="#contact">İletişim</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-glow hero-glow-left"></div>
+            <div class="hero-glow hero-glow-right"></div>
+            <div class="hero-content">
+                <span class="hero-badge">Yapay Zekâ Destekli İçerik Üretimi</span>
+                <h1>Küçük İşletmeler İçin Akıllı Web Sitesi İçerik Asistanı</h1>
+                <p class="hero-description">İşletmenizin sektörünü, hizmetlerini ve iletişim tonunu seçin; yapay zekâ destekli sistem sizin için profesyonel web sitesi metinleri oluştursun.</p>
+                <div class="hero-actions">
+                    <a href="#generator" class="btn btn-primary">İçerik Oluşturmaya Başla</a>
+                    <a href="#about" class="btn btn-secondary">Projeyi İncele</a>
+                </div>
+            </div>
+
+            <div class="hero-metrics">
+                <article class="metric-card">
+                    <span class="metric-label">Üretilen içerik blokları</span>
+                    <strong>5 farklı çıktı</strong>
+                    <p>Ana sayfa başlığı, hakkımızda, hizmet açıklaması, SEO başlığı ve iletişim çağrısı tek akışta oluşturulur.</p>
+                </article>
+                <article class="metric-card">
+                    <span class="metric-label">Hedef kullanıcı</span>
+                    <strong>KOBİ ve yerel işletmeler</strong>
+                    <p>Ajans desteği almadan hızlı başlangıç yapmak isteyen ekipler için tasarlanmıştır.</p>
+                </article>
+                <article class="metric-card metric-card-highlight">
+                    <span class="metric-label">Demo akışı</span>
+                    <strong>Sektöre göre dinamik üretim</strong>
+                    <p>Girilen sektör, şehir, hizmet ve ton bilgileriyle örnek metinler anında güncellenir.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="about" class="content-section section-surface">
+            <div class="section-heading">
+                <span class="section-badge">Proje Hakkında</span>
+                <h2>Web sitesi metni üretimini hızlandıran pratik bir AI yardımcı</h2>
+                <p>AI Web İçerik Asistanı, küçük ve orta ölçekli işletmelerin web sitesi için ihtiyaç duyduğu metinleri kısa sürede hazırlamasına yardımcı olan bir konsept projedir.</p>
+            </div>
+
+            <div class="about-layout">
+                <article class="about-panel large-panel">
+                    <h3>Neyi çözer?</h3>
+                    <p>Birçok işletme web sitesi yaptırmak istediğinde tasarım kadar içerik üretiminde de zorlanır. Özellikle ana sayfa başlığı, hakkımızda metni, hizmet açıklamaları ve dönüşüm odaklı çağrılar zaman alır.</p>
+                    <p>Bu proje, sektör ve hizmet bilgilerini alarak kurumsal, samimi, premium veya sade tonlarda hazır web metinleri önerir. Böylece işletme sahibi sıfırdan metin yazmak yerine yönlendirilmiş içerik taslaklarıyla ilerler.</p>
+                </article>
+
+                <div class="about-stack">
+                    <article class="about-panel stat-panel">
+                        <span>Odak</span>
+                        <strong>Hızlı içerik üretimi</strong>
+                        <p>Site yayına alma sürecindeki içerik tıkanıklığını azaltır.</p>
+                    </article>
+                    <article class="about-panel stat-panel">
+                        <span>Kazanım</span>
+                        <strong>Tutarlı marka dili</strong>
+                        <p>Farklı sayfalarda aynı iletişim çizgisinin korunmasına destek olur.</p>
+                    </article>
+                </div>
+            </div>
+
+            <p class="about-credit">Bu proje, Aksaray Üniversitesi Yönetim Bilişim Sistemleri öğrencisi Ayhan Berat Erduran tarafından Yapay Zekâ dersi kapsamında geliştirilmiştir.</p>
+        </section>
+
+        <section id="how-it-works" class="content-section">
+            <div class="section-heading">
+                <span class="section-badge">Nasıl Çalışır?</span>
+                <h2>Üç adımda profesyonel web sitesi içeriği</h2>
+                <p>Kullanıcı deneyimi, karmaşık ayarlar yerine net veri girişine dayanır. Amaç, birkaç dakikada kullanılabilir taslaklar oluşturmaktır.</p>
+            </div>
+
+            <div class="steps-grid">
+                <article class="step-card">
+                    <span class="step-number">01</span>
+                    <h3>İşletme profilini gir</h3>
+                    <p>İşletme adını, sektörünü, hizmetlerini ve bulunduğu şehri sisteme tanımla.</p>
+                </article>
+                <article class="step-card">
+                    <span class="step-number">02</span>
+                    <h3>İletişim tonunu seç</h3>
+                    <p>Kurumsal, samimi, premium veya sade tonlardan biri seçilerek marka dilinin çerçevesi belirlenir.</p>
+                </article>
+                <article class="step-card">
+                    <span class="step-number">03</span>
+                    <h3>AI çıktısını anında al</h3>
+                    <p>Sistem, tek butonla ana sayfa metninden SEO başlığına kadar kullanılabilir içerik blokları üretir.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="generator" class="content-section section-surface">
+            <div class="section-heading">
+                <span class="section-badge">AI İçerik Üretici</span>
+                <h2>Canlı demo ile işletme bilgilerinden metin oluşturun</h2>
+                <p>Bu alan, chatbot benzeri bir arayüzde örnek AI cevaplarını gösterir. Gerçek API kullanılmadan demo mantığı ile çalışır.</p>
+            </div>
+
+            <div class="generator-shell">
+                <form class="generator-card" id="contentGeneratorForm">
+                    <div class="card-topline">
+                        <span class="dot dot-live"></span>
+                        <span>AI içerik üretim paneli</span>
+                    </div>
+                    <h3>İşletme bilgilerini girin</h3>
+                    <p class="form-intro">Sistemin örnek içerik üretebilmesi için aşağıdaki alanları doldurun.</p>
+
+                    <div class="form-toolbar">
+                        <button type="button" class="btn btn-secondary btn-compact" id="fillExampleBtn">Örnek Doldur</button>
+                        <button type="button" class="btn btn-secondary btn-compact" id="clearFormBtn">Formu Temizle</button>
+                    </div>
+
+                    <div class="form-grid">
+                        <div class="form-group">
+                            <label for="businessName">İşletme adı</label>
+                            <input type="text" id="businessName" name="businessName" placeholder="Örn. Atlas Hafriyat" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="sector">Sektör seçimi</label>
+                            <select id="sector" name="sector" required>
+                                <option value="" disabled selected>Sektör seçin</option>
+                                <option value="Hafriyat">Hafriyat</option>
+                                <option value="İnşaat">İnşaat</option>
+                                <option value="Hukuk Bürosu">Hukuk Bürosu</option>
+                                <option value="Restoran / Kafe">Restoran / Kafe</option>
+                                <option value="Güzellik Merkezi">Güzellik Merkezi</option>
+                                <option value="Psikolog / Terapi Merkezi">Psikolog / Terapi Merkezi</option>
+                                <option value="Diş Kliniği">Diş Kliniği</option>
+                                <option value="Emlak Ofisi">Emlak Ofisi</option>
+                                <option value="Oto Galeri">Oto Galeri</option>
+                                <option value="Kuaför / Berber">Kuaför / Berber</option>
+                                <option value="Spor Salonu">Spor Salonu</option>
+                                <option value="Danışmanlık Firması">Danışmanlık Firması</option>
+                                <option value="Yazılım Şirketi">Yazılım Şirketi</option>
+                                <option value="Eğitim Kurumu">Eğitim Kurumu</option>
+                                <option value="Sağlık Kliniği">Sağlık Kliniği</option>
+                                <option value="Mimarlık Ofisi">Mimarlık Ofisi</option>
+                                <option value="Temizlik Firması">Temizlik Firması</option>
+                                <option value="Nakliyat Firması">Nakliyat Firması</option>
+                                <option value="Otel / Pansiyon">Otel / Pansiyon</option>
+                                <option value="Organizasyon Firması">Organizasyon Firması</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group form-group-wide">
+                            <label for="services">Hizmetler</label>
+                            <textarea id="services" name="services" rows="4" placeholder="Örn. Hafriyat, temel kazı, yıkım, dolgu, altyapı hazırlığı" required></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="tone">Yazı tonu</label>
+                            <select id="tone" name="tone" required>
+                                <option value="" disabled selected>Ton seçin</option>
+                                <option value="kurumsal">Kurumsal</option>
+                                <option value="samimi">Samimi</option>
+                                <option value="premium">Premium</option>
+                                <option value="sade">Sade</option>
+                                <option value="güven veren">Güven Veren</option>
+                                <option value="profesyonel">Profesyonel</option>
+                                <option value="genç ve dinamik">Genç ve Dinamik</option>
+                                <option value="resmi">Resmi</option>
+                                <option value="modern">Modern</option>
+                                <option value="satış odaklı">Satış Odaklı</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="city">Şehir</label>
+                            <input type="text" id="city" name="city" placeholder="Örn. Ankara" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="targetAudience">Hedef kitle</label>
+                            <select id="targetAudience" name="targetAudience" required>
+                                <option value="" disabled selected>Hedef kitle seçin</option>
+                                <option value="Bireysel müşteriler">Bireysel müşteriler</option>
+                                <option value="Kurumsal firmalar">Kurumsal firmalar</option>
+                                <option value="Öğrenciler">Öğrenciler</option>
+                                <option value="Aileler">Aileler</option>
+                                <option value="Yerel müşteriler">Yerel müşteriler</option>
+                                <option value="Premium müşteri kitlesi">Premium müşteri kitlesi</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="language">Dil seçimi</label>
+                            <select id="language" name="language" required>
+                                <option value="tr" selected>Türkçe</option>
+                                <option value="en">İngilizce</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="contentLength">İçerik uzunluğu</label>
+                            <select id="contentLength" name="contentLength" required>
+                                <option value="" disabled selected>İçerik uzunluğu seçin</option>
+                                <option value="kısa">Kısa</option>
+                                <option value="orta">Orta</option>
+                                <option value="uzun">Uzun</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <p class="form-feedback" id="formFeedback" aria-live="polite"></p>
+
+                    <div class="loading-state" id="loadingState" aria-live="polite" hidden>
+                        <span class="loading-spinner"></span>
+                        <span>AI içerik hazırlanıyor...</span>
+                    </div>
+
+                    <div class="form-actions">
+                        <button type="submit" class="btn btn-primary btn-block" id="generateBtn">AI İçerik Oluştur</button>
+                    </div>
+                </form>
+
+                <div class="chat-card">
+                    <div class="chat-header">
+                        <div>
+                            <span class="chat-kicker">Konuşma ekranı</span>
+                            <h3>AI Asistan</h3>
+                        </div>
+                        <span class="chat-status">Demo aktif</span>
+                    </div>
+
+                    <div class="result-toolbar" id="resultToolbar" hidden>
+                        <button type="button" class="btn btn-secondary btn-compact" id="newVersionBtn">Yeni Versiyon Oluştur</button>
+                        <button type="button" class="btn btn-secondary btn-compact" id="downloadBtn">Metni İndir</button>
+                    </div>
+
+                    <div class="chat-stream" id="chatStream">
+                        <article class="chat-message user-message">
+                            <span class="message-label">Kullanıcı</span>
+                            <p>İşletme bilgilerini girerek ana sayfa ve hizmet metinleri oluşturmak istiyorum.</p>
+                        </article>
+
+                        <article class="chat-message ai-message welcome-message">
+                            <span class="message-label">AI Asistan</span>
+                            <p>Merhaba, işletmenize uygun web sitesi metinlerini üretmek için soldaki formu doldurun. Sonuçlar burada sohbet cevabı gibi görüntülenecek.</p>
+                        </article>
+                    </div>
+
+                    <div class="result-panels" id="resultPanels" hidden>
+                        <article class="output-card">
+                            <div class="output-card-header">
+                                <strong id="heroTitleHeading">Ana sayfa hero başlığı</strong>
+                                <button type="button" class="copy-btn" data-copy-target="heroTitle">Kopyala</button>
+                            </div>
+                            <p id="heroTitleOutput"></p>
+                        </article>
+
+                        <article class="output-card">
+                            <div class="output-card-header">
+                                <strong id="aboutTextHeading">Hakkımızda metni</strong>
+                                <button type="button" class="copy-btn" data-copy-target="aboutText">Kopyala</button>
+                            </div>
+                            <p id="aboutTextOutput"></p>
+                        </article>
+
+                        <article class="output-card">
+                            <div class="output-card-header">
+                                <strong id="serviceTextHeading">Hizmet açıklaması</strong>
+                                <button type="button" class="copy-btn" data-copy-target="serviceText">Kopyala</button>
+                            </div>
+                            <p id="serviceTextOutput"></p>
+                        </article>
+
+                        <article class="output-card">
+                            <div class="output-card-header">
+                                <strong id="seoTitleHeading">SEO başlığı</strong>
+                                <button type="button" class="copy-btn" data-copy-target="seoTitle">Kopyala</button>
+                            </div>
+                            <p id="seoTitleOutput"></p>
+                        </article>
+
+                        <article class="output-card">
+                            <div class="output-card-header">
+                                <strong id="seoKeywordsHeading">SEO anahtar kelimeler</strong>
+                                <button type="button" class="copy-btn" data-copy-target="seoKeywords">Kopyala</button>
+                            </div>
+                            <div class="keyword-chips" id="seoKeywordsOutput"></div>
+                        </article>
+
+                        <article class="output-card">
+                            <div class="output-card-header">
+                                <strong id="socialTextHeading">Sosyal medya tanıtım metni</strong>
+                                <button type="button" class="copy-btn" data-copy-target="socialText">Kopyala</button>
+                            </div>
+                            <p id="socialTextOutput"></p>
+                        </article>
+
+                        <article class="output-card">
+                            <div class="output-card-header">
+                                <strong id="ctaTextHeading">İletişim çağrısı</strong>
+                                <button type="button" class="copy-btn" data-copy-target="ctaText">Kopyala</button>
+                            </div>
+                            <p id="ctaTextOutput"></p>
+                        </article>
+
+                        <article class="output-card quality-card">
+                            <div class="output-card-header">
+                                <strong id="qualityScoreHeading">İçerik Kalite Skoru</strong>
+                                <button type="button" class="copy-btn" data-copy-target="qualityScore">Kopyala</button>
+                            </div>
+                            <div class="quality-grid" id="qualityScoreOutput"></div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+
+            <div class="history-section" id="historySection">
+                <div class="section-heading history-heading">
+                    <span class="section-badge">Geçmiş Üretimler</span>
+                    <h2>Son oluşturulan içerikler</h2>
+                    <p>Son 3 üretim burada listelenir. Kartlara tıklayarak ilgili çıktıyı tekrar görüntüleyebilirsiniz.</p>
+                </div>
+                <div class="history-grid" id="historyGrid">
+                    <article class="history-empty" id="historyEmptyState">
+                        <strong>Henüz kayıt yok</strong>
+                        <p>İlk içerik üretiminden sonra geçmiş kartları burada görünecek.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="features" class="content-section">
+            <div class="section-heading">
+                <span class="section-badge">Özellikler</span>
+                <h2>KOBİ odaklı içerik üretimini kolaylaştıran başlıklar</h2>
+                <p>Sunum, demo ve ürün fikri gösterimi için yeterince profesyonel; kullanım mantığı açısından da anlaşılır bir yapı sunar.</p>
+            </div>
+
+            <div class="features-grid">
+                <article class="feature-card">
+                    <h3>Sektöre özel metin üretimi</h3>
+                    <p>Girilen sektör verisine göre daha ilgili ve bağlama uygun açıklamalar üretir.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>SEO uyumlu başlık önerisi</h3>
+                    <p>Anahtar kelime odaklı başlıklarla arama görünürlüğünü destekler.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>Hızlı hakkımızda metni oluşturma</h3>
+                    <p>Kurumsal tanıtımı sıfırdan yazmadan kısa sürede taslak haline getirir.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>Hizmet açıklaması üretme</h3>
+                    <p>Sunulan hizmetleri net, düzenli ve web sitesine uygun şekilde ifade eder.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>Kurumsal iletişim dili</h3>
+                    <p>Marka tonuna göre resmiyet seviyesini ve kelime seçimini dengeler.</p>
+                </article>
+                <article class="feature-card">
+                    <h3>Küçük işletmeler için dijitalleşme desteği</h3>
+                    <p>Dijital varlığını güçlendirmek isteyen işletmelere erişilebilir bir başlangıç sağlar.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="scenario" class="content-section section-surface">
+            <div class="section-heading">
+                <span class="section-badge">Kullanım Senaryosu</span>
+                <h2>Gerçek ihtiyaca yakın örnek akış</h2>
+                <p>Bir hafriyat firması web sitesi yaptırmak istiyor. Firma sahibi sektör, hizmetler ve şehir bilgisini sisteme giriyor. Sistem otomatik olarak kurumsal web sitesi metinleri oluşturuyor.</p>
+            </div>
+
+            <div class="scenario-panel">
+                <div class="scenario-story">
+                    <span class="scenario-tag">Örnek vaka</span>
+                    <h3>Hafriyat firması için birkaç dakika içinde hazır taslak</h3>
+                    <p>İşletme sahibi manuel olarak sayfa sayfa metin yazmak yerine yalnızca temel bilgileri sisteme girer. AI Web İçerik Asistanı; ana sayfa başlığı, güven veren hakkımızda metni, hizmet özetleri ve çağrı mesajlarını tek akışta üretir.</p>
+                </div>
+                <div class="scenario-points">
+                    <div class="scenario-item">
+                        <strong>Girdi</strong>
+                        <p>Hafriyat, temel kazı, altyapı hazırlığı, Ankara, kurumsal ton</p>
+                    </div>
+                    <div class="scenario-item">
+                        <strong>Çıktı</strong>
+                        <p>Profesyonel tanıtım metinleri, SEO başlığı ve iletişim çağrısı</p>
+                    </div>
+                    <div class="scenario-item">
+                        <strong>Fayda</strong>
+                        <p>İçerik hazırlama süresini kısaltır ve yayına çıkış sürecini hızlandırır</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="content-section">
+            <div class="section-heading">
+                <span class="section-badge">İletişim</span>
+                <h2>Projeyi sunum, demo veya ürünleştirme için konuşalım</h2>
+                <p>AI Web İçerik Asistanı; ajanslar, freelancer geliştiriciler ve dijital dönüşüm projeleri için örneklenebilir bir yapı sunar.</p>
+            </div>
+
+            <div class="contact-grid">
+                <article class="contact-card">
+                    <h3>İletişim bilgileri</h3>
+                    <div class="contact-item">
+                        <span>Proje odağı</span>
+                        <p>KOBİ web sitesi içerik üretimi</p>
+                    </div>
+                    <div class="contact-item">
+                        <span>Sunum formatı</span>
+                        <p>Yapay zekâ dersi proje demosu ve ürün fikri gösterimi</p>
+                    </div>
+                    <div class="contact-item">
+                        <span>Çıktı yapısı</span>
+                        <p>Ana sayfa, hakkımızda, hizmetler, SEO ve iletişim metinleri</p>
+                    </div>
+                </article>
+
+                <article class="contact-card contact-cta-card">
+                    <h3>Bir sonraki adım</h3>
+                    <p>Bu demo yapı gerçek API, kullanıcı oturumu ve içerik geçmişi eklenerek tam ürün haline getirilebilir.</p>
+                    <a href="#generator" class="btn btn-secondary">Demo Alanına Git</a>
+                </article>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-shell">
+            <p>AI Web İçerik Asistanı | Yapay Zekâ Destekli Web Sitesi İçerik Üretici Projesi</p>
+            <div class="footer-links">
+                <a href="#hero">Anasayfa</a>
+                <a href="#generator">AI İçerik Üretici</a>
+                <a href="#contact">İletişim</a>
+            </div>
+        </div>
+    </footer>
+
+    <div class="toast-container" id="toastContainer" aria-live="polite" aria-atomic="true"></div>
+
+    <script src="websitesi.js"></script>
+</body>
+</html>

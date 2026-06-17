@@ -1,29 +1,43 @@
-# AI Web İçerik Asistanı
+# AI Web Content Assistant
 
-AI Web İçerik Asistanı, küçük ve orta ölçekli işletmeler için yapay zekâ destekli web sitesi içerik üretimi sağlayan demo bir projedir.
+AI Web Content Assistant is a demo project designed to help small and medium-sized businesses generate professional website content with the support of artificial intelligence.
 
-## Özellikler
+## Features
 
-- İşletme bilgilerine göre içerik üretimi
-- Sektör bazlı metin oluşturma
-- SEO başlığı önerileri
-- Sosyal medya içerikleri
-- Hizmet açıklamaları
-- Kurumsal ve profesyonel içerik üretimi
-- Responsive tasarım
+- AI-powered content generation
+- Industry-specific website content creation
+- Hero section and homepage text generation
+- About Us content generation
+- Service descriptions
+- SEO-friendly title suggestions
+- Social media content generation
+- Call-to-action (CTA) creation
+- Responsive and modern user interface
 
-## Kullanılan Teknolojiler
+## Technologies Used
 
 - HTML5
 - CSS3
-- JavaScript
+- JavaScript (Vanilla JS)
 
-## Proje Amacı
+## Project Purpose
 
-Küçük işletmelerin web sitesi içeriklerini hızlı ve profesyonel şekilde oluşturabilmesini sağlayan yapay zekâ destekli bir içerik asistanı geliştirmek.
+The purpose of this project is to simplify the content creation process for businesses by generating professional and structured website content based on user inputs such as industry, services, target audience, and communication style.
 
-## Geliştirici
+## Target Users
 
-Ayhan Berat Erduran
-Yönetim Bilişim Sistemleri
-Aksaray Üniversitesi
+- Small businesses
+- Local companies
+- Startups
+- Freelancers
+- Digital agencies
+
+## Project Developer
+
+**Ayhan Berat Erduran**  
+Management Information Systems (MIS)  
+Aksaray University
+
+## License
+
+This project was developed for educational and portfolio purposes.

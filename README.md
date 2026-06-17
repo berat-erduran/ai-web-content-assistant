@@ -35,8 +35,9 @@ The purpose of this project is to simplify the content creation process for busi
 ## Project Developer
 
 **Ayhan Berat Erduran**  
-Management Information Systems (MIS)  
-Aksaray University
+Graduate of Management Information Systems (MIS)  
+Aksaray University  
+Web Developer & AI Enthusiast
 
 ## License
 
